@@ -1,0 +1,26 @@
+.login-group{
+    display: flex;
+    margin-top:3rem;
+    .lbl{
+        text-align: center;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+    .row{
+        justify-content: center;
+    }
+    .btng{
+        margin-top:1rem;
+        text-align: center;
+    }
+    .msgg{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .err{
+        color:#f44336
+    }
+    .success{
+        color: #4caf50;
+    }
+}

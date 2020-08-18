@@ -1,0 +1,100 @@
+
+.modal{
+    .modal-title{
+        margin-top: -0.15rem;
+        font-weight: 400;
+    }
+    .btn-secondary{
+        margin-right:1rem !important;
+        background:#eee;
+    }
+}
+
+.loading-message{
+    text-align: center;
+}
+.home-group{
+    .row{
+        &.fixed{
+            position:fixed;
+            width: 100%;
+            z-index: 1;
+            background: #fff;
+        }
+        &.booking-group{
+            padding-top: 7rem;
+            .total{
+                padding-left:0.5rem;
+            }
+            .list-booking{
+                padding-left:0.5rem;
+                margin-top:1.5rem;
+                .item{
+                    margin-bottom: 1rem;
+                    .counter{
+                        font-weight: 600;
+                    }
+                    .action-group{
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-right: 1rem;
+                    }
+                    .kv{
+                        display:flex;
+                        .k{
+                            margin-right:0.5rem;
+                        }
+                        .v{
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+        .col-md-6{
+            margin:0 auto;
+
+            .welcome{
+                text-align: center;
+                margin-top:0.5rem;
+                border-bottom: solid 1px #ccc;
+                padding-bottom: 0.5rem;
+                .logout{
+                    color:#777;
+                    cursor: pointer;
+                    font-size:0.9rem;
+                    &:hover{
+                        color: #17a2b8;
+                    }
+                }
+                .roleinfo{
+                    font-size:0.8rem;
+
+                }
+            }
+        }
+    }
+
+    .create-booking-body{
+        .item{
+            margin-bottom: 1rem;
+            .label{
+                font-weight: 400;
+                margin-right: 1rem;
+                font-size: 0.65rem;
+                margin-bottom: -0.25rem;
+            }
+            .value{
+                .date-slot{
+                    margin-bottom: 0.5rem;
+                    span{
+                        padding-right: 0.5rem;
+                        font-size:0.9rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+}
