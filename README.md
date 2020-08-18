@@ -1,4 +1,7 @@
 # wellness-booking-ui
+Tech:
+    React (hook) + Redux
+
 Step to run:
 1. npm install
 2. npm start
