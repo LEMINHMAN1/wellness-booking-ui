@@ -9,8 +9,10 @@ Step to run:
 
 Note:
 Login with 3 accounts
-    User:
-        hr1/123456
-        hr2/123456
-    Admin:
-        admin/123456
+
+* User:
+hr1/123456
+hr2/123456
+
+* Admin:
+admin/123456
