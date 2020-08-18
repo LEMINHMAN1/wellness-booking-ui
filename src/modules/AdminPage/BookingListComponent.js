@@ -55,7 +55,7 @@ const Comp = ({ globalState, dispatch, bookings }) => {
 
         // Update successfully
         if (response) {
-            document.getElementById('closeModal').click();
+            document.getElementById('approveBookingModal'+'_'+'closeModal').click();
             dispatch({ type: type.RELOAD_LIST_BOOKING });
         }
     }

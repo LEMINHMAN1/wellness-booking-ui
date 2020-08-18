@@ -7,7 +7,7 @@ const Comp = ({modalId, title, children, onSubmit, submitLabel}) => {
                 <div className="modal-content">
                     <div className="modal-header">
                         <h5 className="modal-title" id={modalId+'Label'}>{title}</h5>
-                        <button id='closeModal' type="button" className="close" data-dismiss="modal" aria-label="Close">
+                        <button id={`${modalId}_closeModal`} type="button" className="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>

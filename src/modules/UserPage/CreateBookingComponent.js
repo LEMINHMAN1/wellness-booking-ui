@@ -79,7 +79,7 @@ const Comp = () => {
             
             // Create successfully
             if(response){
-                document.getElementById('closeModal').click();
+                document.getElementById('newBookingModal'+'_closeModal').click();
                 dispatch({type:type.RELOAD_LIST_BOOKING});
             }
         }
