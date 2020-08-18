@@ -20,7 +20,7 @@ const call = async (endpoint, data, method, needAuthentication) => {
         }
 
         // Get new token after 1 day, because access token will expired after 1 day
-        if (Number(accessTokenExpiresIn) < Number(moment().add(1, 'days'))) {
+        if (Number(accessTokenExpiresIn) < Number(moment().add(1, 'd').valueOf())) {
             const getTokenRes = getNewAccessToken(username, refreshTokenFromStorage);
             if (!isEmpty(getTokenRes)) {
                 accessTokenFromStorage = getTokenRes.accessToken;
@@ -30,7 +30,7 @@ const call = async (endpoint, data, method, needAuthentication) => {
                     username,
                     accessToken: accessTokenFromStorage,
                     refreshToken: refreshTokenFromStorage,
-                    expiresIn: moment().add(1, 'days').unix()
+                    expiresIn: moment().add(1, 'd').valueOf()
                 });
             }
         }

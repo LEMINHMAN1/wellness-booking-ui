@@ -50,15 +50,15 @@ const Comp = ({ data, index }) => {
                  </div>
                 <div className='v'>
                     <div className='slot-item'>
-                        {formatDateTime(data.timeSlot1)}
+                        {formatDateTime(data.timeslot1)}
                         {data.dateSlotSelected === '1' && <span>(Confirmed)</span>}
                     </div>
                     <div className='slot-item'>
-                        {formatDateTime(data.timeSlot2)}
+                        {formatDateTime(data.timeslot2)}
                         {data.dateSlotSelected === '2' && <span>(Confirmed)</span>}
                     </div>
                     <div className='slot-item'>
-                        {formatDateTime(data.timeSlot3)}
+                        {formatDateTime(data.timeslot3)}
                         {data.dateSlotSelected === '3' && <span>(Confirmed)</span>}
                     </div>
                 </div>

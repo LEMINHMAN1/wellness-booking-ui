@@ -35,7 +35,7 @@ const login = async (username, password, callback) => {
                 username,
                 accessToken: response.accessToken,
                 refreshToken: response.refreshToken,
-                expiresIn: moment().unix()
+                expiresIn: moment().valueOf()
             });
     
             window.location.replace("/");

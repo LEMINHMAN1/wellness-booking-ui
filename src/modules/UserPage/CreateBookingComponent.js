@@ -70,9 +70,9 @@ const Comp = () => {
             const data = {
                 eventType: currentEventType,
                 location: location,
-                timeslot1: moment(dateSlot1).unix(),
-                timeslot2: moment(dateSlot2).unix(),
-                timeslot3: moment(dateSlot3).unix()
+                timeslot1: moment(dateSlot1).valueOf(),
+                timeslot2: moment(dateSlot2).valueOf(),
+                timeslot3: moment(dateSlot3).valueOf()
             }
             let response = await call(EndPoint.CREATE_BOOKING, data, 'POST', true);
             response = await response.json();

@@ -60,7 +60,7 @@ const Comp = ({ globalState, dispatch, bookings }) => {
         }
     }
 
-    const { timeSlot1, timeSlot2, timeSlot3 } = globalState;
+    const { timeslot1, timeslot2, timeslot3 } = globalState;
     const {slotSelected} = localState;
 
     return (
@@ -83,7 +83,7 @@ const Comp = ({ globalState, dispatch, bookings }) => {
                 <div className='modal-content-group'>
                     <div className='item'>
                         <div className='t'>
-                            {formatDateTime(timeSlot1)}
+                            {formatDateTime(timeslot1)}
                         </div>
                         <div>
                             <button onClick={()=>onSelectedSlot(1)} type='button' className={`btn btn-sm ${slotSelected === 1 ? 'btn-info' : 'btn-lignt'}`}>{slotSelected === 1 ? 'Confirmed' : 'Confirm'}</button>
@@ -91,7 +91,7 @@ const Comp = ({ globalState, dispatch, bookings }) => {
                     </div>
                     <div className='item'>
                         <div className='t'>
-                            {formatDateTime(timeSlot2)}
+                            {formatDateTime(timeslot2)}
                         </div>
                         <div>
                             <button onClick={()=>onSelectedSlot(2)} type='button' className={`btn btn-sm ${slotSelected === 2? 'btn-info' : 'btn-lignt'}`}>{slotSelected === 2 ? 'Confirmed' : 'Confirm'}</button>
@@ -99,7 +99,7 @@ const Comp = ({ globalState, dispatch, bookings }) => {
                     </div>
                     <div className='item'>
                         <div className='t'>
-                            {formatDateTime(timeSlot3)}
+                            {formatDateTime(timeslot3)}
                         </div>
                         <div>
                             <button onClick={()=>onSelectedSlot(3)} type='button' className={`btn btn-sm ${slotSelected === 3 ? 'btn-info' : 'btn-lignt'}`}>{slotSelected === 3 ? 'Confirmed' : 'Confirm'}</button>
